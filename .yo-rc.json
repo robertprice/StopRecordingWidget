@@ -1,0 +1,11 @@
+{
+  "generator-mendix": {
+    "promptValues": {
+      "copyright": "Coverwise 2019",
+      "license": "Apache 2",
+      "author": "Robert Price",
+      "boilerplate": "empty",
+      "widgetoptions": []
+    }
+  }
+}
