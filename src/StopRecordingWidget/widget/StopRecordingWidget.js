@@ -2,21 +2,7 @@ define([
     "dojo/_base/declare",
     "mxui/widget/_WidgetBase",
 
-    "mxui/dom",
-    "dojo/dom",
-    "dojo/dom-prop",
-    "dojo/dom-geometry",
-    "dojo/dom-class",
-    "dojo/dom-style",
-    "dojo/dom-construct",
-    "dojo/_base/array",
-    "dojo/_base/lang",
-    "dojo/text",
-    "dojo/html",
-    "dojo/_base/event",
-
-
-], function (declare, _WidgetBase, dom, dojoDom, dojoProp, dojoGeometry, dojoClass, dojoStyle, dojoConstruct, dojoArray, lang, dojoText, dojoHtml, dojoEvent) {
+], function (declare, _WidgetBase) {
     "use strict";
 
     return declare("StopRecordingWidget.widget.StopRecordingWidget", [ _WidgetBase ], {
@@ -40,7 +26,7 @@ define([
             logger.debug(this.id + ".update");
 
             window.setTimeout(function() {
-                document.title = "Stop Recording...";
+                document.title = "Stop recording...";
             }, this.delayMicroseconds);
 
             this._contextObj = obj;
